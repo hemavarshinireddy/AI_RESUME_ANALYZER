@@ -1,0 +1,8 @@
+test_id,test_resume,expected_top_role,actual_top_role,pass_fail,comments
+TC01,resume_a_data_analyst.docx,Data Analyst,,,"Should rank Data Analyst first; includes Python, SQL, Excel, Pandas, Power BI."
+TC02,resume_b_ml_engineer.docx,Machine Learning Engineer,,,"Should rank Machine Learning Engineer first; includes scikit-learn, FastAPI, Docker, MLflow."
+TC03,resume_c_nlp_engineer.docx,NLP Engineer,,,"Should rank NLP Engineer first; includes NLP, transformers, Hugging Face, PyTorch."
+TC04,resume_d_computer_vision_engineer.docx,Computer Vision Engineer,,,"Should rank Computer Vision Engineer first; includes OpenCV, CNN, YOLO, PyTorch."
+TC05,resume_e_ai_engineer.docx,AI Engineer,,,"Should rank AI Engineer first; includes deep learning, LLM, RAG, APIs, Docker."
+TC06,unsupported_file.txt,Validation Error,,,Application should reject unsupported file type.
+TC07,empty_resume.docx,No Score,,,Application should show an error or warning for no readable resume text.
